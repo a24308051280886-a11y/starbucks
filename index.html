@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks MX - Menú</title>
+</head>
+<body bgcolor="#ffffff" text="#1e3932">
+
+    <header>
+        <table width="100%" border="0" cellpadding="15" cellspacing="0">
+            <tr>
+                <td width="50%" align="left">
+                    <img src="logo.png" alt="Logo Starbucks" width="55" height="55">
+                </td>
+                <td width="50%" align="right">
+                    <div id="estado-usuario">
+                        <font face="Arial, sans-serif" size="2">
+                            Estado: <strong>Invitado</strong> | <a href="#acceso"><font color="#006241"><strong>Iniciar sesión / Registrarse</strong></font></a>
+                        </font>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <nav>
+        <table width="100%" bgcolor="#1e3932" border="0" cellpadding="12" cellspacing="0">
+            <tr>
+                <td align="center">
+                    <font face="Arial, sans-serif" size="2" color="#ffffff">
+                        <a href="#inicio"><font color="#ffffff"><strong>INICIO / PROMOCIONES</strong></font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#calientes"><font color="#ffffff">BEBIDAS CALIENTES</font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#frappuccino"><font color="#ffffff">FRAPPUCCINO®</font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#frias"><font color="#ffffff">BEBIDAS FRÍAS</font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#te"><font color="#ffffff">BEBIDAS BASE TÉ</font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#coldbrew"><font color="#ffffff">COLD BREW</font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="#acceso"><font color="#ffffff"><strong>MI CUENTA</strong></font></a>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <br>
+
+    <main id="inicio">
+        <table width="85%" align="center" border="0" cellpadding="10" cellspacing="0">
+            
+            <tr>
+                <td bgcolor="#d4e9e2" align="center">
+                    <font face="Arial, sans-serif" color="#1e3932">
+                        <p><strong>PROMOCIÓN DE STARBUCKS</strong></p>
+                        <h2>¡2x1 en Frappuccino</h2>
+                        <p>Inicia sesión o regístrate</p>
+                    </font>
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr>
+                <td>
+                    <font face="Arial, sans-serif">
+                        <font size="2" color="#6b6b6b">Starbucks MX / </font>
+                        <font size="2" color="#1e3932"><strong>Menú</strong></font>
+                        <br><br>
+                        <font size="6" color="#1e3932"><strong>Conoce nuestras bebidas</strong></font>
+                        <br><br><br>
+                        <hr color="#d4d4d4" size="1">
+                        <p><font size="3" color="#1e3932"><strong>Bebidas</strong></font></p>
+                        <hr color="#d4d4d4" size="1">
+                    </font>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <br>
+                    <table width="100%" border="0" cellpadding="15" cellspacing="0">
+                        <tr align="center">
+                            
+                            <td width="33%" id="calientes">
+                                <img src="bc.png" alt="Bebidas calientes" width="160" height="160">
+                                <br><br>
+                                <font face="Arial, sans-serif" size="3" color="#1e3932"><strong>Bebidas calientes</strong></font>
+                            </td>
+
+                            <td width="33%" id="frappuccino">
+                                <img src="f.png" alt="Frappuccino" width="160" height="160">
+                                <br><br>
+                                <font face="Arial, sans-serif" size="3" color="#1e3932"><strong>Frappuccino®</strong></font>
+                            </td>
+
+                            <td width="33%" id="frias">
+                                <img src="bf.png" alt="Bebidas frías" width="160" height="160">
+                                <br><br>
+                                <font face="Arial, sans-serif" size="3" color="#1e3932"><strong>Bebidas frías</strong></font>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <br>
+                    <table width="66%" align="center" border="0" cellpadding="15" cellspacing="0">
+                        <tr align="center">
+                            
+                            <td width="50%" id="te">
+                                <img src="te.png" alt="Bebidas Base Té" width="160" height="160">
+                                <br><br>
+                                <font face="Arial, sans-serif" size="3" color="#1e3932"><strong>Bebidas Base Té</strong></font>
+                            </td>
+
+                            <td width="50%" id="coldbrew">
+                                <img src="cb.png" alt="Cold Brew" width="160" height="160">
+                                <br><br>
+                                <font face="Arial, sans-serif" size="3" color="#1e3932"><strong>Cold Brew</strong></font>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td><br><hr color="#d4d4d4" size="1"><br></td></tr>
+            <tr id="acceso">
+                <td>
+                    <font face="Arial, sans-serif" color="#1e3932">
+                        <h2 align="center">Inicio de Sesión / Registro</h2>
+                        <p id="mensaje-respuesta" align="center"></p>
+
+                        <div id="formularios-acceso">
+                            <table width="100%" border="0" cellpadding="15" cellspacing="10">
+                                <tr valign="top">
+                                    <td width="50%" bgcolor="#f7f7f7">
+                                        <h3>Iniciar Sesión</h3>
+                                        <form id="form-login">
+                                            <input type="hidden" name="accion" value="login">
+                                            
+                                            <label for="correo_login"><strong>Correo electrónico:</strong></label><br>
+                                            <input type="email" id="correo_login" name="correo" size="35" required><br><br>
+
+                                            <label for="pass_login"><strong>Contraseña:</strong></label><br>
+                                            <input type="password" id="pass_login" name="password" size="35" required><br><br>
+
+                                            <button type="submit">Ingresar</button>
+                                        </form>
+                                    </td>
+
+                                    <td width="50%" bgcolor="#f7f7f7">
+                                        <h3>Registrarse</h3>
+                                        <form id="form-registro">
+                                            <input type="hidden" name="accion" value="registro">
+
+                                            <label for="nombre_reg"><strong>Nombre completo:</strong></label><br>
+                                            <input type="text" id="nombre_reg" name="nombre" size="35" required><br><br>
+
+                                            <label for="correo_reg"><strong>Correo electrónico:</strong></label><br>
+                                            <input type="email" id="correo_reg" name="correo" size="35" required><br><br>
+
+                                            <label for="pass_reg"><strong>Contraseña:</strong></label><br>
+                                            <input type="password" id="pass_reg" name="password" size="35" required><br><br>
+
+                                            <button type="submit">Crear Cuenta</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </font>
+                </td>
+            </tr>
+
+        </table>
+    </main>
+
+    <br><br>
+
+    <footer>
+        <table width="100%" bgcolor="#1e3932" border="0" cellpadding="20" cellspacing="0">
+            <tr>
+                <td align="center">
+                    <font face="Arial, sans-serif" size="2" color="#ffffff">
+                        <p>Nombre: Maria Fernanda Rivera Chavez | 0886 | Grupo: 5°J</p>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script>
+        const urlPHP = window.location.protocol === 'file:' 
+            ? 'http://127.0.0.1/starbuckss/procesar.php' 
+            : 'procesar.php';
+        function enviarFormulario(evento) {
+            evento.preventDefault();
+            const datos = new FormData(evento.target);
+            fetch(urlPHP, {
+                method: 'POST',
+                body: datos
+            })
+            .then(respuesta => respuesta.json())
+            .then(data => {
+                if (data.exito) {
+                    document.getElementById('estado-usuario').innerHTML = 
+                        `<font face="Arial, sans-serif" size="2">Bienvenido(a): <strong>${data.nombre}</strong> (${data.correo}) | <a href="#" onclick="cerrarSesion()"><font color="#006241">Cerrar sesión</font></a></font>`;
+                    
+                    document.getElementById('mensaje-respuesta').innerHTML = 
+                        `<font color="#006241" size="4"><strong>¡Hola ${data.nombre}! Has iniciado sesión correctamente.</strong></font>`;
+                    document.getElementById('formularios-acceso').hidden = true;
+                } else {
+                    alert(data.mensaje);
+                }
+            })
+            .catch(() => {
+                alert('Verifica que Apache y MySQL estén encendidos en XAMPP y que tu carpeta se llame "starbuckss".');
+            });
+        }
+        function cerrarSesion() {
+            document.getElementById('estado-usuario').innerHTML = 
+                `<font face="Arial, sans-serif" size="2">Estado: <strong>Invitado</strong> | <a href="#acceso"><font color="#006241"><strong>Iniciar sesión / Registrarse</strong></font></a></font>`;
+            document.getElementById('mensaje-respuesta').innerHTML = '';
+            document.getElementById('formularios-acceso').hidden = false;
+            document.getElementById('form-login').reset();
+            document.getElementById('form-registro').reset();
+        }
+        document.getElementById('form-login').addEventListener('submit', enviarFormulario);
+        document.getElementById('form-registro').addEventListener('submit', enviarFormulario);
+    </script>
+
+</body>
+</html>
